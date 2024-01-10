@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>Ejercicio 3  (Colores)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-label>Lista de Colores</ion-label>
+  
+      <app-color-list [color]="coloresArrayVariable" *ngFor="let coloresArrayVariable of coloresArray">
+
+      </app-color-list>
+
+    </ion-item>
+  </ion-list>
+
+  <ion-button shape="round" color="danger" routerLink="/ejercicio">
+Volver al ejercicio 1
+  </ion-button>
+</ion-content>
